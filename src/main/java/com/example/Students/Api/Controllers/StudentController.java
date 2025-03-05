@@ -14,7 +14,8 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(path = "api/v1/student")
-public class StudentController {
+public class StudentController
+{
 
     /**
      * Servicio para la gestión de operaciones relacionadas con estudiantes.
@@ -53,11 +54,11 @@ public class StudentController {
     }
 
     private Student convertToEntity(StudentDTO studentDTO) {
-        // Asigna valores por defecto o maneja campos faltantes según tu lógica
+
         return new Student(
                 studentDTO.getName(),
-                0, // Ejemplo: age (deberías obtenerlo del DTO si es necesario)
-                LocalDate.now(), // Ejemplo: dob (deberías obtenerlo del DTO)
+                studentDTO.getAge(),
+                LocalDate.now(),
                 studentDTO.getEmail()
         );
     }

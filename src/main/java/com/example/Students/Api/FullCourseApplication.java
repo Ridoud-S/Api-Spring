@@ -1,5 +1,6 @@
 package com.example.Students.Api;
 
+import com.example.Students.Api.Entities.Student;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;

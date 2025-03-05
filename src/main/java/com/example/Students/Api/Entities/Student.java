@@ -33,19 +33,10 @@ public class Student
      */
     private String name;
 
-    /**
-     * Edad del estudiante.
-     */
     private Integer age;
 
-    /**
-     * Fecha de nacimiento del estudiante (Date of Birth).
-     */
     private LocalDate dob; //Date of Birth
 
-    /**
-     * Correo electrónico del estudiante.
-     */
     private String email;
 
     /**
@@ -88,101 +79,55 @@ public class Student
         this.email = email;
     }
 
-    /**
-     * Retorna el identificador único del estudiante.
-     *
-     * @return id del estudiante.
-     */
+
     public Long getId() {
         return id;
     }
 
-    /**
-     * Asigna un nuevo valor al identificador único del estudiante.
-     *
-     * @param id Nuevo ID para el estudiante.
-     */
+
     public void setId(Long id) {
         this.id = id;
     }
 
-    /**
-     * Retorna el correo electrónico del estudiante.
-     *
-     * @return Email del estudiante.
-     */
+
     public String getEmail() {
         return email;
     }
 
-    /**
-     * Asigna un nuevo correo electrónico al estudiante.
-     *
-     * @param email Nuevo correo electrónico.
-     */
+
     public void setEmail(String email) {
         this.email = email;
     }
 
-    /**
-     * Retorna la fecha de nacimiento del estudiante.
-     *
-     * @return Fecha de nacimiento.
-     */
     public LocalDate getDob() {
         return dob;
     }
 
-    /**
-     * Asigna una nueva fecha de nacimiento al estudiante.
-     *
-     * @param dob Nueva fecha de nacimiento.
-     */
+
     public void setDob(LocalDate dob) {
         this.dob = dob;
     }
 
-    /**
-     * Retorna la edad del estudiante.
-     *
-     * @return Edad del estudiante.
-     */
     public Integer getAge() {
         return age;
     }
 
-    /**
-     * Asigna una nueva edad al estudiante.
-     *
-     * @param age Nueva edad del estudiante.
-     */
+
     public void setAge(Integer age) {
         this.age = age;
     }
 
-    /**
-     * Retorna el nombre del estudiante.
-     *
-     * @return Nombre del estudiante.
-     */
+
     public String getName() {
         return name;
     }
 
-    /**
-     * Asigna un nuevo nombre al estudiante.
-     *
-     * @param name Nuevo nombre del estudiante.
-     */
+
     public void setName(String name) {
         this.name = name;
     }
 
-    /**
-     * Representación en cadena del objeto Student.
-     *
-     * @return Cadena con los datos del estudiante.
-     */
+
     @Override
     public String toString()
     {
