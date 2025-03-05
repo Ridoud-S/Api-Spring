@@ -40,6 +40,7 @@ API REST para gestión de estudiantes desarrollada con Spring Boot. Proporciona 
 
 ## Estructura del Proyecto 📂
 
+```bash
 src/main/java
 ├── com/example/Students/Api
 │ ├── Config/ # Configuraciones Spring
