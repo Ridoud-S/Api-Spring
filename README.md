@@ -9,15 +9,38 @@ API REST para gestión de estudiantes desarrollada con Spring Boot. Proporciona 
 - **Base de Datos Inicializada**: Datos de prueba al iniciar la aplicación
 - **Transacciones**: Operaciones gestionadas con `@Transactional`
 
-## Tecnologías 🛠️
-- **Spring Boot 3**
-- Spring Data JPA
-- Hibernate (ORM)
-- Base de datos H2 (embebida, para desarrollo)
-- Maven (gestión de dependencias)
+## 🛠️ Tecnologías
+
+### Backend
+- **Spring Boot 3.4.2** - Framework principal
+- **Java 17** - Lenguaje base
+- **Spring Data JPA** - Persistencia de datos
+- **Hibernate** - ORM (Mapeo objeto-relacional)
+- **PostgreSQL** - Base de datos relacional (Driver incluido)
+- **Spring Web** - Construcción de APIs REST
+- **Maven** - Gestión de dependencias y builds
+
+### Testing
+- **Spring Boot Test** - Pruebas de integración
+- **JUnit 5** - Framework de testing
+
+### Desarrollo
+- **Spring Boot Maven Plugin** - Empaquetado y ejecución
+
+- **Arquitectura**: MVC (Modelo-Vista-Controlador)
+- **Persistencia**: 
+  - Entity Manager integrado
+  - Transacciones declarativas con `@Transactional`
+  - Repositorios JPA con herencia de `JpaRepository`
+- **API REST**:
+  - Manejo de excepciones automático
+  - Serialización/Deserialización JSON integrada
+  - Validación de parámetros con annotations
+
 
 ## Estructura del Proyecto 📂
 
+```bash
 src/main/java
 ├── com/example/Students/Api
 │ ├── Config/ # Configuraciones Spring
